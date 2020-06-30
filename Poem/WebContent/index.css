@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@400;900&family=Sunflower:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: #f0f4c3;
+}
+
+header {
+	width: 100%;
+	padding: 30px 0px;
+}
+
+header a {
+	display: block;
+	font-size: 40px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+.lt {						/* login text 로그인 텍스트  */
+	margin: 5px;
+	text-align: right;
+}
+
+.lt a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #cddc39;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+	transition: all ease-in-out 250ms;
+	cursor: pointer;
+}
+
+nav ul li:hover {
+	background-color: #afb42b;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #827717;
+    font-size: 18px;
+}
+
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+}
+
+
+h1 {
+	font-family: 'Gugi', cursive;
+	margin: 10px 10px;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.pbox {					/* poem box 시 */
+	position: absolute;
+	width: 360px;
+	left: 38%;
+	border: 3px solid #c5e1a5;
+	margin: 30px;
+	padding: 30px;
+	text-align: center;
+}
+
+.pbox img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.pc {						/* poem content 시 내용 */
+	font-family: 'Sunflower', sans-serif;
+}
+
+.pca {						/* poem creator (author) 시 저자 */
+	font-family: 'Sunflower', sans-serif;
+	text-align: right;
+}
+
+.sform {					/* search form 검색 폼 */
+	position: relative;
+	left: 7%;
+	margin: 8%;
+	
+}
+
+.sbox {						/* search box 검색창  */
+	margin: 20px;
+	padding: 30px;
+	width: 60%;
+	height: 15%;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 10px;
+	border: 5px solid;
+	border-color: #aeea00;
+}
+
+.sbtn {						/* search button 검색 버튼 */
+	width: 10%;
+	height: 113px;				
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 30px;
+	cursor: pointer;
+	border-color: #aeea00;
+	background-color: #8bc34a;
+	color: white;
+}
+
+.opbtn {				/* option button 제목, 저자 등 옵션 선택 버튼 */
+	width: 12%;
+	height: 116px;
+	margin-bottom: 15px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 30px;
+	vertical-align: middle;
+	text-align-last: center;
+	border: 3px solid;
+	border-color: #aeea00;
+}
+
+.ssform {					/* small search form 작은 검색 폼 */
+	position: relative;
+	left: 23%;
+	margin: 10px;
+}
+
+.ssbox {						/* small search box 작은 검색창  */
+	margin: 20px;
+	width: 45%;
+	height: 40px;
+	font-family: 'Noto Sans KR', sans-serif;
+	text-align: center;
+	border: 3px solid;
+	border-color: #aeea00;
+}
+
+.ssbtn {						/* small search button 작은 검색 버튼 */				
+	font-family: 'Noto Sans KR', sans-serif;
+	cursor: pointer;
+	height: 40px;
+	border-color: #aeea00;
+	background-color: #8bc34a;
+	color: white;
+}
+
+.sopbtn {				/* small option button 작은 제목, 저자 등 옵션 선택 버튼 */
+	font-family: 'Noto Sans KR', sans-serif;
+	vertical-align: middle;
+	text-align-last: center;
+	height: 40px;
+	margin-bottom: 2px;
+	border: 3px solid;
+	border-color: #aeea00;
+}
+
+
+.rp {						/* result page 책 리스트 보여지는 박스 */
+	margin: 20px;
+	padding: 20px;
+	width: 350px;
+	height: 350px;
+	float: left;
+	border: 3px solid #c5e1a5;
+}
+
+#imgf {					/* image float 이미지 설정 */
+	width: 200px;
+	height: 280px;
+	float: left;
+	padding: 20px 15px;
+}
+
+.login-box {			/* 로그인 화면  */
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(45deg, #f0f4c3, #ffe082);
+}
+
+.login-form {				/* 로그인 박스  */
+	position: relative;
+	margin: auto;
+	top: 130px;
+	width: 750px;
+	border: 3px solid #ff9100;
+	background: white;
+	padding: 70px;
+	text-align: center;
+}
+
+.login-form h1 {
+	margin-top: 0;
+	margin-bottom: 40px;
+	font-size: 50px;
+	color: #ff9100;
+}
+
+.txtb {					/* 로그인 텍스트 박스  */
+	diplay: inline-block;
+	width: 400px;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.amtxtb {					/* 회원가입 텍스트 박스  */
+	diplay: inline-block;
+	width: 300px;
+	padding: 5px 10px;
+	border-radius: 3px;
+	text-align: center;
+	margin-right: 115px;
+	background: #f5f5f5;
+}
+
+.rs {						/* radio sorting 성별 정렬 설정  */
+	margin-right: 195px;
+}
+
+.login-btn {			/* 로그인 버튼  */
+	margin-top: 10px;
+	margin-bottom: 30px;
+	width: 400px;
+	font-weight: bold;
+	padding: 10px;
+	border: 0;
+	border-radius: 6px;
+	background: #ff9100;
+	color: white;
+	cursor: pointer;
+}
+
+.table {				/* 자유게시판 테이블 */
+	margin: auto;
+	margin-bottom: 10px;
+	border-collapse: collapse;
+	border-top: 3px solid #afb42b;
+}
+
+.table th {
+	color: #afb42b;
+	text-align: center;
+}
+
+.table th, .table td {
+	padding: 10px;
+	background: #fff9c4;
+	border: 1px solid #cddc39;
+}
+
+.table th:first-child, .table td:first-child {
+	border-left: 0;
+}
+
+.table th:last-child, .table td:last-child {
+	border-right: 0;
+} 
+
+.table tr td: first-child {
+	text-align: center;
+}
+
+.st {					/* searchbar type 검색결과입니다 텍스트 */
+	text-align: center;
+}
+
+.off-screen {
+	display: none;
+}
+
+#nav {
+	position: relative;
+	left: 35%;
+	width: 500px;
+	text-align: center;
+}
+
+#nav a {
+    display: inline-block;
+    padding: 5px 8px;
+    margin-top: 15px;
+    margin-right: 10px;
+    background: #aeea00;
+    color: #000;
+    text-decoration: none;
+}
+#nav a.active {
+    background: green;
+    color: white;
+}
+
+.rb {								/* regular button 보통 버튼 */
+	position: relative;
+	left: 73%;
+	margin: 5px;
+	padding: 8px;
+	background: green;
+	font-weight: bold;
+	color: white;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.rdb {								/* regular detail button 보통 상세 버튼 */
+	padding: 8px;
+	background: green;
+	font-weight: bold;
+	color: white;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.lrb {								/* login regular button 로그인 보통 버튼 */
+	margin: 5px;
+	padding: 8px;
+	background: #ff9100;
+	font-weight: bold;
+	color: white;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+	float: right;
+}
+
+.hrb {								/* home regular button 홈 보통 버튼 */
+	margin: 5px;
+	padding: 5px;
+	background: #ff9100;
+	font-weight: bold;
+	color: white;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.lm {								/* login messages 로그인 메시지 */
+	position: absolute;
+	top: 300px;
+	left: 100px;
+	font-family: 'Gugi', cursive;
+	font-size: 100px;
+
+}
+
+.wf-form {								/* write form 게시글 작성 폼 */
+	position: relative;
+	margin: auto;
+	top: 30px;
+	width: 800px;
+	border: 0;
+	padding: 30px;
+	text-align: center;
+}
+
+.nttxtb {								/* write form name and title text box */
+	background: #f9fbe7;
+	border-color: gray;
+	width: 92%;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.ctxtb {							/* write form content text box */
+	background: #f9fbe7;
+	border-color: gray;
+	margin-left: 40px;
+	width: 93%;
+	height: 30%;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
